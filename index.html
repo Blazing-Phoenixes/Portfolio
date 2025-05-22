@@ -1,0 +1,163 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/font-awesome/4.7.0/css/font-awesome.min.css libs"
+    />
+    <link rel="stylesheet" href="styleport.css" />
+    <link rel="stylesheet" href="styleport1.css" />
+  </head>
+
+  <body class="animated-box whitetheme" id="home">
+    <!-- nav section -->
+    <div class="navbar" id="myNavbar">
+      <a href="#"></a>
+      <a href="#home" class="nav-link"> Home</a>
+      <a href="#about" class="nav-link"> About</a>
+      <a href="#skills" class="nav-link">Skill</a>
+      <a href="#project" class="nav-link">Project</a>
+      <a href="#contact"class="nav-link"> Contact</a>
+      
+
+      <a href="javascript:void(0);" class="icon nav-link" onclick="toggleMenu()">&#9776;</a>
+    </div>
+    <br /><br /><br />
+    
+    <!-- about section -->
+    <span id="about">About <strong>Me</strong></span>
+
+    <div class="coin">
+      <div class="coin1">
+        <p> Hello! I'm <strong>BHARATH KUMAR S</strong>,Skilled in developing and optimizing Python applications. Seeking a role as a Python Developer to contribute my expertise in coding, problem-solving, and teamwork to drive innovation and success in a dynamic tech environment.</p>
+      </div>
+      <div class="coin2">
+       <a ><img src="https://i.ibb.co/m8hQzG7/My-Photo-2.jpg" alt="My-Photo-2" ></a>
+      </div>
+    </div>
+
+    <!-- skill section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2><strong>Skills</strong></h2>
+        <ul class="skills-list ">
+          <li class="nav-link">HTML</li>
+          <li class="nav-link">CSS</li>
+          <li class="nav-link">JAVASCRIPT</li>
+          <li class="nav-link">PYTHON</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- project section -->
+    <div>
+      <h1 class="ptc st2" id="project"><strong>My Projects</strong></h1>
+      <br /><br />
+
+        <div class="box">
+          <h1 id="show1" class="cls nav-link">PYTHON <div class="show">&#9660</div></h1>
+          <br /><br />
+          <div id="content2" class="hidden assign hide">
+            <div>
+              This mini project is focused on the <strong class="st4">GUI And Command-line Based Projects</strong>, including a To-Do List App, Weather App, File Manager, Password Generator, Quiz Program, and To-Do List CLI. These projects showcased proficiency in Python. The GUI projects provided an intuitive user experience, while the command-line based projects demonstrated efficiency and flexibility.
+
+              
+            </div>
+            <div>
+             <a href="https://github.com/bharathkumar-python-developer/Tkinter_Based_GUI" 
+     target="_blank" 
+     class="button-link">Source Code</a>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+
+        <div>
+          <h1 id="show2" class="cls nav-link">FRONTEND <div class="show">&#9660</div></h1>
+          
+          <br /><br />
+          <div id="content3" class="hidden assign hide">
+            <div>
+              This mini project involves creating my own
+              <strong class="st5">Portfolio</strong>. The portfolio includes my
+              personal details, skills, and projects, along with the source code
+              for each project. The portfolio is developed using HTML, CSS, and
+              JavaScript to provide a functional and interactive presentation.
+            </div>            
+            <a
+              href="https://github.com/bharathkumar-python-developer/Portfolio"
+     target="_blank" 
+     class="button-link">Source Code</a>
+          </div>
+        </div>
+        <br /><br /><br />
+      </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div class="call" id="contact">
+      <h1><strong>Contact details</strong></h1>
+      <br /><br /><br />
+      <form id="C1">
+      <input type="hidden" name="access_key" value="c5be3130-48c5-4dfe-bd33-62229100ac58">
+<input type="hidden" name="subject" value="Portfolio Mail From Client">
+        <input type="text" name="Name" id="name" placeholder="Name"  required/><br />
+        <input 
+         type="text" 
+         name="Phone Number"
+          id="name"
+          placeholder="eg.: +91 123456789"
+        required/><br />
+        <input
+          type="email"
+          name="E-mail"
+          id="mail"
+          placeholder="example@gmail.com"
+        required/><br />
+
+        <textarea
+          type="text"
+          name="Message"
+          id="msg"
+          placeholder="message here"
+        required></textarea
+        ><br /><br />
+        <input type="submit" value="Submit" />
+        <div id="result"></div>
+      </form>
+    </div>
+    
+    <!-- Popup container -->
+<div id="popup-container" style="display: none;">
+  <div id="popup">
+    <h2>Thank you for contacting us!</h2>
+    <p>We'll get back to you soon.</p>
+    <button id="close-popup">OK</button>
+  </div>
+</div>
+
+    <!-- footer section -->
+<footer class="footer-section">
+  <div class="footer-icons">
+    <a href="https://github.com/bharathkumar-python-developer" class="icon github" target="_blank">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="https://in.linkedin.com/in/s-bharath-kumar-ab92ba293" class="icon linkedin" target="_blank">
+      <i class="fa fa-linkedin"></i>
+    </a>
+  </div>
+
+  <p class="footer-text">
+    &copy; 2024 This portfolio developed by BHARATH KUMAR S
+  </p>
+</footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
