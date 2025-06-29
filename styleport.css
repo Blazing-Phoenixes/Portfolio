@@ -444,7 +444,7 @@ input[type="submit"]:hover {
   left: 0;
   width: auto;
   height: auto;
-  background-color: solid gray;/* dimmed background */
+  background-color: rgba(0, 0, 0, 0.5); /* dimmed background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -452,7 +452,7 @@ input[type="submit"]:hover {
 }
 
 #popup {
-  background: solid gray;
+  background: white;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
