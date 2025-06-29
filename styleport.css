@@ -313,7 +313,7 @@ body {
 }
 .show:hover {
   cursor: pointer;
-  color: yellow;
+  color: #F0F0F0;
 }
 .cls {
   text-align: center;
