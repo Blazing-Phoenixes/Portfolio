@@ -5,13 +5,13 @@
 }
 .assign > img {
   display: block;
-  margin: 0 auto;
-  width: 50%;
-  max-width: 300px;
+  margin: 20px auto;
+  max-width: 90vw;
+  width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: contain;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 480px) {
   .assign > img {
@@ -129,6 +129,10 @@ span {
   cursor: pointer;
 }
 
+.image-container {
+  text-align: center;
+  padding: 10px;
+}
 
 #popup-container {
   position: fixed;
