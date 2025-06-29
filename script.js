@@ -1,4 +1,6 @@
 document.getElementById("show1").addEventListener("click", function () {
+  var content = document.getElementById("content1");
+  content.classList.toggle("hidden");
   var content = document.getElementById("content2");
   content.classList.toggle("hidden");
 }); //project of py content
@@ -51,4 +53,20 @@ form.addEventListener('submit', function(e) {
                 result.style.display = "none";
             }, 3000);
         });
+});
+
+const popupContainer = document.getElementById('popup-container');
+const closePopupButton = document.getElementById('close-popup');
+
+// Add event listener to form submission
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  // Show popup
+  popupContainer.style.display = 'block';
+});
+
+// Add event listener to close popup button
+closePopupButton.addEventListener('click', () => {
+  // Hide popup
+  popupContainer.style.display = 'none';
 });
