@@ -99,6 +99,31 @@ body {
 }
 
 
+/* Container wrapping the image and its source code link */
+.image-container {
+  text-align: center; /* Center image and link horizontally */
+  margin: 1.5em 0; /* vertical spacing around the image container */
+}
+
+/* The image itself */
+.image-container img {
+  display: block;
+  margin: 0 auto; /* Center the image */
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* subtle rounding */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
+}
+.image-container .source-link {
+  display: inline-block;
+  margin-top: 0.75em;
+  font-weight: bold;
+  color: #0000ee;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 #popup-container {
   position: fixed;
   top: 0;
