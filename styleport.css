@@ -88,8 +88,9 @@ body {
   position: relative;
 }
 .coin2 img:hover {
-  cursor: none;
-  box-shadow: 0 0 5em 0 yellow;
+  cursor: pointer;
+  box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
 }
 
 @media screen and (min-width: 601px) and (max-width: 1050px) {
@@ -126,9 +127,10 @@ body {
     position: relative;
   }
   .coin2 img:hover {
-    cursor: none;
-    box-shadow: 0 0 5em 0 #007BFF;
-  }
+  cursor: pointer;
+  box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
 }
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
