@@ -311,16 +311,19 @@ body {
 .show {
   float: right;
 }
+
 .show:hover {
   cursor: pointer;
-  color: #F0F0F0;
+  color: #007BFF;
 }
+
 .cls {
   text-align: center;
 }
+
 .cls:hover {
   cursor: pointer;
-  color: #F0F0F0;
+  color: #007BFF;
 }
 .hidden {
   display: none;
