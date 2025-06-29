@@ -296,7 +296,7 @@ body {
 }
 .skills-list li:hover {
   cursor: pointer;
-  color: yellow;
+  color: #6C63FF;
 }
 
 /* project section */
