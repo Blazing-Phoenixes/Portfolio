@@ -96,7 +96,7 @@ body {
   /* about section */
   .coin {
     padding: 10px;
-    border: 1px solid #ADD8E6;
+    border: 1px solid gray;
     border-radius: 10px;
     display: flex;
     height: fit-content;
