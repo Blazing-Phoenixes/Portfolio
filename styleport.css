@@ -320,7 +320,7 @@ body {
 }
 .cls:hover {
   cursor: pointer;
-  color: yellow;
+  color: #F0F0F0;
 }
 .hidden {
   display: none;
