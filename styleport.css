@@ -127,7 +127,7 @@ body {
   }
   .coin2 img:hover {
     cursor: none;
-    box-shadow: 0 0 5em 0 yellow;
+    box-shadow: 0 0 5em 0 #007BFF;
   }
 }
 @media screen and (max-width: 600px) {
