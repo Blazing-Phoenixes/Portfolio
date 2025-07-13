@@ -3,6 +3,8 @@ document.getElementById("show1").addEventListener("click", function () {
   content.classList.toggle("hidden");
   var content = document.getElementById("content2");
   content.classList.toggle("hidden");
+  var content = document.getElementById("content4");
+  content.classList.toggle("hidden");
 }); //project of py content
 
 document.getElementById("show2").addEventListener("click", function () {
