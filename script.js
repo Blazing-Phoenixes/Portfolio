@@ -5,12 +5,12 @@ document.getElementById("show1").addEventListener("click", function () {
   content.classList.toggle("hidden");
   var content = document.getElementById("content4");
   content.classList.toggle("hidden");
-  var content = document.getElementById("content5");
-  content.classList.toggle("hidden");
 }); //project of py content
 
 document.getElementById("show2").addEventListener("click", function () {
   var content = document.getElementById("content3");
+  content.classList.toggle("hidden");
+    var content = document.getElementById("content5");
   content.classList.toggle("hidden");
 }); //project of front content
 
