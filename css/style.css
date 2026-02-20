@@ -30,6 +30,24 @@ body {
     line-height: 1.5;
 }
 
+/* animation */
+.animated-box {
+  position: relative;
+  opacity: 0;
+  transform: translate(100px);
+  animation: slideInBottom 1s ease-out forwards;
+}
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Section */
 section {
     padding: 30px 6%;
