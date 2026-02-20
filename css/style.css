@@ -413,7 +413,8 @@ section {
     color: royalblue;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 8px;
+    display: block;
+    margin-top: 10px;
     position: relative;
 }
 
@@ -441,4 +442,5 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 
