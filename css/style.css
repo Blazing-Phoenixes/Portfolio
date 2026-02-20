@@ -414,7 +414,7 @@ section {
     font-weight: bold;
     cursor: pointer;
     display: block;
-    margin-top: 8px;
+    margin: 8px auto;
     text-align: center;
     position: relative;
 }
@@ -443,6 +443,7 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 
 
 
