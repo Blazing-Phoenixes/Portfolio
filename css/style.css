@@ -15,7 +15,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: lightblue;
+    background: lightskyblue;
     transition: 0.3s ease;
     display: flex;              /* FIXED */
     justify-content: space-between;
@@ -441,3 +441,4 @@ section {
     justify-content: center;
     align-items: center;
 }
+
