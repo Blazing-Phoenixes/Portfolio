@@ -440,6 +440,7 @@ section {
 
 .read-more-btn:hover::after {
     width: 100%;
+    left: 0;
 }
 
 #popup-container {
@@ -451,6 +452,7 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 
 
 
