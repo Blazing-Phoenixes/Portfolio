@@ -46,14 +46,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Read More Toggle for Services
-document.querySelectorAll(".project-cards p").forEach(paragraph => {
+// Read More Toggle for Services (Paragraph + Highlights)
+document.querySelectorAll(".project-cards").forEach(card => {
+
+    const paragraph = card.querySelector("p");
+    const highlightsTitle = card.querySelector("h4:nth-of-type(2)");
+    const highlightsList = card.querySelector("ul");
+
+    if (!paragraph) return;
 
     const fullText = paragraph.innerHTML;
+    const shortText = fullText.substring(0, 120) + "...";
 
     if (fullText.length > 120) {
 
-        const shortText = fullText.substring(0, 120) + "...";
         paragraph.innerHTML = shortText;
+
+        // Hide highlights initially
+        if (highlightsTitle) highlightsTitle.style.display = "none";
+        if (highlightsList) highlightsList.style.display = "none";
 
         const button = document.createElement("button");
         button.innerText = "Read More";
@@ -66,17 +77,24 @@ document.querySelectorAll(".project-cards p").forEach(paragraph => {
         button.addEventListener("click", () => {
             if (!expanded) {
                 paragraph.innerHTML = fullText;
+
+                if (highlightsTitle) highlightsTitle.style.display = "block";
+                if (highlightsList) highlightsList.style.display = "block";
+
                 button.innerText = "Read Less";
                 expanded = true;
             } else {
                 paragraph.innerHTML = shortText;
+
+                if (highlightsTitle) highlightsTitle.style.display = "none";
+                if (highlightsList) highlightsList.style.display = "none";
+
                 button.innerText = "Read More";
                 expanded = false;
             }
         });
     }
 });
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("contact-form");
@@ -121,3 +139,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
