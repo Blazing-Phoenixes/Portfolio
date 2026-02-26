@@ -411,23 +411,31 @@ section {
     background: none;
     border: none;
     color: royalblue;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
     display: block;
     margin: 8px auto;
     text-align: center;
     position: relative;
+    padding: 4px 0;
+    transition: color 0.3s ease;
 }
 
+.read-more-btn:hover {
+    color: #1d4ed8;
+}
+
+/* Underline Animation */
 .read-more-btn::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: -3px;
     width: 0%;
     height: 2px;
     background: royalblue;
-    transition: 0.3s;
+    transition: width 0.3s ease, left 0.3s ease;
 }
 
 .read-more-btn:hover::after {
@@ -438,11 +446,12 @@ section {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0, 119, 182, 0.35); /* soft blue overlay */
-    backdrop-filter: blur(6px);          /* glass effect */
+    background: rgba(0, 119, 182, 0.35); 
+    backdrop-filter: blur(6px);
     justify-content: center;
     align-items: center;
 }
+
 
 
 
