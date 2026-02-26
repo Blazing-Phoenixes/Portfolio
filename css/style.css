@@ -414,11 +414,11 @@ section {
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-    display: block;
+    display: inline-block; /* Important fix */
     margin: 8px auto;
     text-align: center;
     position: relative;
-    padding: 4px 0;
+    padding-bottom: 3px;
     transition: color 0.3s ease;
 }
 
@@ -426,21 +426,20 @@ section {
     color: #1d4ed8;
 }
 
-/* Underline Animation */
+/* Proper Underline */
 .read-more-btn::after {
     content: "";
     position: absolute;
-    left: 50%;
-    bottom: -3px;
+    left: 0;
+    bottom: 0;
     width: 0%;
     height: 2px;
     background: royalblue;
-    transition: width 0.3s ease, left 0.3s ease;
+    transition: width 0.3s ease;
 }
 
 .read-more-btn:hover::after {
     width: 100%;
-    left: 0;
 }
 
 #popup-container {
@@ -452,6 +451,7 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 
 
 
