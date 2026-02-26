@@ -263,6 +263,43 @@ section {
     transform: scale(1.05);
 }
 
+/* Key Highlights Title */
+.project-cards h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Key Highlights List */
+.project-cards ul {
+    list-style: none;        /* Remove default bullets */
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+/* Each Highlight Item */
+.project-cards ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #334155;
+}
+
+/* Custom Bullet */
+.project-cards ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 13px;
+    color: royalblue;
+    font-weight: bold;
+}
+
 /* Contact */
 .contact {
     text-align: center;
@@ -447,6 +484,7 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 
 
 
