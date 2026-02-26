@@ -46,11 +46,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Read More Toggle for Services
-// Read More Toggle for Services (Paragraph + Highlights)
 document.querySelectorAll(".project-cards").forEach(card => {
 
     const paragraph = card.querySelector("p");
-    const highlightsTitle = card.querySelector("h4:nth-of-type(2)");
+    const highlightsTitle = card.querySelectorAll("h4")[1];
     const highlightsList = card.querySelector("ul");
 
     if (!paragraph) return;
@@ -62,7 +61,6 @@ document.querySelectorAll(".project-cards").forEach(card => {
 
         paragraph.innerHTML = shortText;
 
-        // Hide highlights initially
         if (highlightsTitle) highlightsTitle.style.display = "none";
         if (highlightsList) highlightsList.style.display = "none";
 
@@ -70,7 +68,12 @@ document.querySelectorAll(".project-cards").forEach(card => {
         button.innerText = "Read More";
         button.classList.add("read-more-btn");
 
-        paragraph.after(button);
+        // 🔥 Correct position
+        if (highlightsList) {
+            highlightsList.after(button);
+        } else {
+            paragraph.after(button);
+        }
 
         let expanded = false;
 
@@ -95,6 +98,7 @@ document.querySelectorAll(".project-cards").forEach(card => {
         });
     }
 });
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("contact-form");
@@ -139,4 +143,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
 
